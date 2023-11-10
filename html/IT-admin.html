@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/IT-admin.css">
+    <title>IT Administrator </title>
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+            <h1>IT and system administrator Page</h1>
+        </header>
+
+        <div class="btn-container">
+
+            <div class="add-user btn">
+                <input type="button" id="add" value="Add User" class="btn">
+            </div>
+            <div class="remove-user btn">
+                <input type="button" id="remove" value="Remove User" class="btn">
+            </div>
+
+        </div>
+
+        <div class="user-details hidden" id="hidden">
+            <div class="details-username">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter user Name..." required>
+            </div>
+
+            <div class="details-userpassword">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"  placeholder="Enter User Password..." required>
+            </div>
+
+            <div class="add-new-user btn-checkbox">
+                <div class="admin">
+                    <input type="checkbox" id="admin" >Admin
+                </div>
+
+                <div class="add-new-user">
+                    <input type="button" id ="add-new-user" value="Add New User" class="btn">
+                </div>
+            </div>
+
+          
+        </div>
+    </main>
+    <script src="../scripts/IT.js"></script>
+</body>
+</html>

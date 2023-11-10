@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 50px;;
+    align-items: center;
+    width: 800px;
+    height: 800px;
+    background-color: antiquewhite;
+}
+
+header{
+    background-color: burlywood;
+    width: 80%;
+    height: 20%;
+    text-align: center;
+    padding: 30px;
+    margin: 30px;
+}
+
+.btn-container {
+    width: 80%;
+    height: 40%;
+    background-color: burlywood;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    width: 150px;
+    height: 50px;
+    color: #333;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hidden  {
+    display: none; 
+}
+
+ .user-details{
+    width: 80%;
+    height: 40%;
+    background-color: burlywood;
+}
+
+input[type = 'text'],
+input[type = 'password']
+{
+    width: 300px;
+    height: 20px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    
+}
+
+.add-new-user {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.details-userpassword{
+    display: flex;
+    justify-content: center;
+}
+
+.details-username{
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    color: #333;
+    font-weight: 500;
+    font-size: large;
+    margin-top: 25px;
+}
