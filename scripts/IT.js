@@ -15,7 +15,7 @@ addUser.addEventListener('click',function(evt){
         const isAdmin = document.getElementById('admin');
 
         //  1. add the user to local storage
-            saveUserToLocalStorage(userName.value,userPass,isAdmin.checked);
+            addUserToLocalStorage(userName.value,userPass,isAdmin.checked);
 
 
         //   2. add the class hidden to addUser 
@@ -24,7 +24,7 @@ addUser.addEventListener('click',function(evt){
 });
 
 
-function saveUserToLocalStorage(username,password,admin){
+function addUserToLocalStorage(username,password,admin){
 
     try{
         const users = JSON.parse(localStorage.getItem('users')) || [];
