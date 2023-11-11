@@ -14,16 +14,18 @@
 
         <div class="btn-container">
 
-            <div class="add-user btn">
+            <div class="add-user ">
                 <input type="button" id="add" value="Add User" class="btn">
             </div>
-            <div class="remove-user btn">
+
+            <div class="remove-user ">
                 <input type="button" id="remove" value="Remove User" class="btn">
             </div>
 
         </div>
 
         <div class="user-details hidden" id="hidden">
+            <h1>Adding User</h1>
             <div class="details-username">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" placeholder="Enter user Name..." required>
@@ -42,10 +44,28 @@
                 <div class="add-new-user">
                     <input type="button" id ="add-new-user" value="Add New User" class="btn">
                 </div>
+
+                <div class="cancel">
+                    <input type="button" id="cancel" value="Cancel" class="btn">
+                </div>
             </div>
 
           
         </div>
+
+        <div class="hidden" id="remove-div">
+            <h1>Removing User </h1>
+            <div class="username">
+                <label for="username">Username:</label>
+                <input type="text" id="usernametxt" name="username" placeholder="Enter user Name..." required>
+            </div>
+
+            <div class="buttons">
+                    <input type="button"  class="btn"  id="removebtn" name="remove" value="Remove">
+                    <input type="button"  class="btn"  id="cancelbtn" name="cancel" value="Cancel">
+            </div>
+        </div>
+        
     </main>
     <script src="../scripts/IT.js"></script>
 </body>
