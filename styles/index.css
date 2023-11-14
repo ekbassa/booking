@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: #05203c;
+    width: 100%;
+    height: 100vh;
+}
+
+.nav-header{
+    width: 100%;
+    height: 15%;
+    background-color: #05203c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    margin-bottom: 50px;
+}
+
+.logo{
+    color: #fff;
+}
+.btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+}
+
+.btn:hover{
+    background-color: #728ba6;
+    color: #fff;
+    font-size: large;
+    font-weight: 700;
+}
+
+.instructions{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.img {
+    margin: auto;
+    width: 90%;
+    height: 600px;
+    background: url("/images/jumbo-jet-flying-sky_23-2150895691.jpg") no-repeat center center/cover;
+    margin-bottom: 50px;
+}

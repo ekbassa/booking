@@ -1,3 +1,6 @@
+// import {utils} from './utils.js';
+
+
 //select the elements
 const addUser = document.getElementById('add');
 const removeUser = document.getElementById('remove');
@@ -15,10 +18,11 @@ addUser.addEventListener('click',function(evt){
         const isAdmin = document.getElementById('admin');
         
         //  1. add the user to local storage
-        addUserToLocalStorage(userName.value,userPass,isAdmin.checked);
+        addUserToLocalStorage(userName.value,userPass.value,isAdmin.checked);
         
         //   2. add the class hidden to addUser 
         addUserDetails.classList.add('hidden');
+        
         
     })
     
@@ -58,14 +62,13 @@ removeUser.addEventListener('click',function(evt){
 
 })
 
-
 function addUserToLocalStorage(username,password,admin){
 
     try{
         const users = JSON.parse(localStorage.getItem('users')) || [];
         let newUser = {
             username,
-            password,
+            password: password,
             isAdmin: admin
     
         }
@@ -130,5 +133,7 @@ function getAllLocalStorageUsers(){
 
 }
 
+
+
 const allUsers = getAllLocalStorageUsers();
-console.log(allUsers);
+console.log('all users: ',allUsers);

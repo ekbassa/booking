@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/search-flights.css">
+    <title>Admin System</title>
+</head>
+<body>
+    <main class="Homepage">
+        <div class="container">
+            <header>
+                <div class="nav-header">
+                    <div class="logo">
+                        <h1>Logo</h1>
+                    </div>
+                     
+                    <h1>Flights Search </h1>
+
+                    <div class="right-side">
+                        <div class="profile">
+                            <p class="username">Name</p>
+                        </div>
+
+
+                        <div class="LogoutButton btn">
+                            <input type="button" id="logout" class="btn"  name="logout" value="Log out">
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </header>
+
+            <section class="instructions">
+                
+                <div class="box">
+                    <div class="from upper flight-info">
+                        <h3>From</h3>
+                    </div>
+                    <div class="lower">
+                        <input type="text" id="source-country" name="search-country">
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="to upper flight-info">
+                        <h3>To</h3>
+                    </div>
+                    <div class="lower">
+                        <input type="text" id="destination-country" name="search-country">
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="depart upper flight-info">
+                        <h3>Depart</h3>
+                    </div>
+                    <div class="lower">
+                        <input type="date" class="date"   id="depart-date" name="depart-date">
+                    </div>
+                </div>
+
+               <div class="box">
+                    <div class="return upper flight-info">
+                        <h3>Return</h3>
+                    </div>
+                    <div class="lower">
+                        <input type="date" class="date"     id="return-date" name="return-date">
+                    </div>
+                </div>
+               
+
+                <div class="box">
+                    <div class="travelers-number upper flight-info">
+                        <h3>Travelers</h3> 
+                    </div>
+                    <div class="lower">
+                        <input type="number" id="travelers-number" name="travelers-number">
+                    </div>
+                </div>
+            
+
+            </section>
+            
+            <section class="img-section">
+                <div class="img">
+                    <!-- <div class="show-flights-container"></div> -->
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+
+    <script src="/scripts/search-flights.js"></script>
+</body>
+</html>

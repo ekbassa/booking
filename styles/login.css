@@ -3,6 +3,10 @@ body {
     background-color: #f7f7f7;
     margin: 40px;
   }
+  body{
+    background-color: #05203c;
+
+  }
 
   .container {
     background-color: #ffffff;
